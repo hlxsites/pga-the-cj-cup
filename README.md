@@ -1,9 +1,8 @@
-# Your Project's Title...
-Your project's description...
+# PGA The CJ Cup
 
 ## Environments
-- Preview: https://main--theplayers--hlxsites.hlx.page/
-- Live: https://main--theplayers--hlxsites.hlx.live/
+- Preview: https://main--the-cj-cup--hlxsites.hlx.page/
+- Live: https://main--the-cj-cup--hlxsites.hlx.live/
 
 ## Installation
 
