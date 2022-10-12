@@ -188,8 +188,14 @@ main .social .social-post {
   display: flex;
   margin: 16px 0;
   font-size: var(--body-font-size-s);
-  max-height: 200px;
+  max-height: 300px;
   overflow-y: scroll;
+}
+
+@media (min-width: 700px) {
+  main .social .social-post {
+    max-height: 240px;
+  }
 }
 
 main .social .social-post::-webkit-scrollbar {
