@@ -63,7 +63,7 @@ function buildSocialTile(tile, data, network) {
   head.innerHTML = `<a href="${profileURL}" class="social-img social-${network}-img"><img src="${data.user.img.url}" alt="${data.user.name} profile picture" /></a>
      <p class="social-username social-${network}-username"><a href="${profileURL}">${data.user.name}</a></p>
      <a href="${FACEBOOK_URL}" class="social-network social-${network}-network"><span class="icon icon-${network}"></span></a>
-     <p class="socail-screenname social-${network}-screenname"><a href="${profileURL}">${data.user.handle}</a></p>
+     <p class="social-screenname social-${network}-screenname"><a href="${profileURL}">${data.user.handle}</a></p>
      <p class="social-date social-${network}-date">${writeDate(data.created_time)}</p>`;
   grid.append(head);
   // setup  post
