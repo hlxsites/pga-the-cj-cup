@@ -12,24 +12,12 @@
 
  :root {
   /* colors */
-  /**
-  --color-blue-darker: #071D37;
-  --color-blue-dark: #04294C;
-  --color-blue: #003360;
-  --color-blue-light: #004B98;
-  --color-blue-lighter: #2D4976;
-  --color-tan: #C2A36E;
-  --color-blue-95: #003360f2;
-  --color-tan-95: #C2A36Ef2;
-  */
-
   --color-blue: #0080c7;
   --color-blue-dark: #0070ae;
   --color-blue-darker: #122a4f;
   --color-blue-lighter: #0090e1;
   --color-blue-light: #005f94;
   
-
   --color-black: #000;
   --color-black-25: #0004;
   --color-gray-dark: #4d4d4d;
