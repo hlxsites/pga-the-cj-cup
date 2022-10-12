@@ -3,9 +3,9 @@
 /* header and nav layout */
 header {
   --nav-color: var(--color-blue);
-  --nav-secondary-color: var(--color-blue-darker);
+  --nav-secondary-color: var(--color-blue-dark);
   --nav-hover-color: var(--color-blue-dark);
-  --nav-border-color: var(--color-blue-light);
+  --nav-border-color: var(--color-blue-lighter);
   --nav-text-color: var(--color-white);
 
   background-color: var(--nav-color);
