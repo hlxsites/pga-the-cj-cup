@@ -21,7 +21,7 @@ main .fragment-container .fragment-wrapper .fragment.promo {
   main .fragment-container.promo-container .fragment-wrapper {
     box-sizing: border-box;
     grid-column-start: 2;
-    grid-row: 2 / span 1;
+    grid-row: auto;
     align-self: start;
     justify-self: start;
   }
