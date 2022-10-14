@@ -36,6 +36,19 @@ export default async function decorate(block) {
     const fragmentSection = fragment.querySelector(':scope .section');
     if (block.classList.contains('promo')) {
       fragmentSection.classList.add('promo-container');
+
+      const wrapper = fragmentSection.querySelector('.default-content-wrapper');
+      const inner = document.createElement('div');
+      inner.classList.add('promo-inner');
+
+      [...wrapper.childNodes].forEach((child) => {
+        const pic = child.querySelector('picture');
+        if (!pic) {
+          inner.append(child);
+        }
+      });
+
+      wrapper.append(inner);
     }
     if (fragmentSection) {
       block.closest('.section').classList.add(...fragmentSection.classList);

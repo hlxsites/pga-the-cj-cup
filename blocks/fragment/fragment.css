@@ -6,16 +6,26 @@ main .fragment-container .fragment-wrapper .fragment.promo {
   main .fragment-container .fragment-wrapper .fragment.promo {
     display: block;
     background-color: white;
-    padding-bottom: 10px;
   }
 
-  main .fragment-container .fragment-wrapper .fragment.promo p,
-  main .fragment-container .fragment-wrapper .fragment.promo h3 {
-    padding: 0 10px;
+  main .fragment-container .fragment-wrapper .fragment.promo .promo-inner {
+    padding: 0 15px;
   }
 
-  main .fragment-container .fragment-wrapper .fragment.promo p:first-child {
-    padding: 0;
+  main .fragment-container .fragment-wrapper .fragment.promo .promo-inner h3 {
+    margin: 0;
+  }
+
+  main .fragment-container .fragment-wrapper .fragment.promo .promo-inner p {
+    padding-right: 46px;
+    padding-bottom: 12px;
+    margin: 0;
+  }
+
+  main .fragment-container .fragment-wrapper .fragment.promo .promo-inner p.button-container {
+    margin: 0 auto;
+    padding-right: 0;
+    width: 50%;
   }
 
   main .fragment-container.promo-container .fragment-wrapper {
