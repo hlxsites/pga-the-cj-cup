@@ -1,0 +1,28 @@
+main .fragment-container .fragment-wrapper .fragment.promo {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  main .fragment-container .fragment-wrapper .fragment.promo {
+    display: block;
+    background-color: white;
+    padding-bottom: 10px;
+  }
+
+  main .fragment-container .fragment-wrapper .fragment.promo p,
+  main .fragment-container .fragment-wrapper .fragment.promo h3 {
+    padding: 0 10px;
+  }
+
+  main .fragment-container .fragment-wrapper .fragment.promo p:first-child {
+    padding: 0;
+  }
+
+  main .fragment-container.promo-container .fragment-wrapper {
+    box-sizing: border-box;
+    grid-column-start: 2;
+    grid-row: 2 / span 1;
+    align-self: start;
+    justify-self: start;
+  }
+}

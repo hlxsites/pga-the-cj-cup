@@ -779,6 +779,12 @@ function buildRelatedStoriesBlock(main, tags) {
     storiesSection.classList.add('related-stories-cols');
   }
   storiesSection.append(buildBlock('related-stories', [['<div>Tags</div>', `<div>${tags}</div>`]]));
+  const promoName = getMetadata('promo');
+  if (promoName) {
+    const promo = buildBlock('fragment', [[`<div><a href="/promo-${promoName}">/promo-${promoName}</a></div>`]]);
+    promo.classList.add('promo');
+    storiesSection.append(promo);
+  }
 }
 
 export function linkPicture(picture) {
@@ -892,8 +898,9 @@ async function buildAutoBlocks(main) {
 /**
  * Decorates the main element.
  * @param {Element} main The main element
+ * @param {boolean} isFragment indicates that the element being decorated is a fragment
  */
-export async function decorateMain(main) {
+export async function decorateMain(main, isFragment) {
   // forward compatible pictures redecoration
   decoratePictures(main);
   decorateLinkedPictures(main);
@@ -904,7 +911,9 @@ export async function decorateMain(main) {
   decorateButtons(main);
 
   decorateIcons(main);
-  await buildAutoBlocks(main);
+  if (!isFragment) {
+    await buildAutoBlocks(main);
+  }
   decorateSections(main);
 
   const sections = [...main.querySelectorAll('.section')];
