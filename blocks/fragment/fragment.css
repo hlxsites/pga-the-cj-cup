@@ -1,38 +1,56 @@
+main .fragment-container .fragment-wrapper .fragment {
+  --promo-headline-color: var(--color-blue);
+}
+
 main .fragment-container .fragment-wrapper .fragment.promo {
   display: none;
+}
+
+main .fragment-container .fragment-wrapper .fragment.promo {
+  background-color: white;
+}
+
+main .fragment-container .fragment-wrapper .fragment.promo .promo-inner {
+  padding: 0 15px;
+}
+
+main .fragment-container .fragment-wrapper .fragment.promo .promo-inner h3 {
+  margin: 0;
+}
+
+main .fragment-container .fragment-wrapper .fragment.promo .promo-inner p {
+  padding-right: 46px;
+  padding-bottom: 12px;
+  margin: 0;
+}
+
+main .fragment-container .fragment-wrapper .fragment.promo .promo-inner p.button-container {
+  margin: 0 auto;
+  padding-right: 0;
+  width: 50%;
+}
+
+main .fragment-container.promo-container .fragment-wrapper {
+  box-sizing: border-box;
+  grid-column-start: 2;
+  grid-row: auto;
+  align-self: start;
+  justify-self: start;
+}
+
+main .fragment-container.promo-container .fragment-wrapper h1,
+main .fragment-container.promo-container .fragment-wrapper h2,
+main .fragment-container.promo-container .fragment-wrapper h3,
+main .fragment-container.promo-container .fragment-wrapper h4,
+main .fragment-container.promo-container .fragment-wrapper h5,
+main .fragment-container.promo-container .fragment-wrapper h6 {
+  color: var(--promo-headline-color);
+  font-weight: 100;
+  text-transform: uppercase;
 }
 
 @media (min-width: 900px) {
   main .fragment-container .fragment-wrapper .fragment.promo {
     display: block;
-    background-color: white;
-  }
-
-  main .fragment-container .fragment-wrapper .fragment.promo .promo-inner {
-    padding: 0 15px;
-  }
-
-  main .fragment-container .fragment-wrapper .fragment.promo .promo-inner h3 {
-    margin: 0;
-  }
-
-  main .fragment-container .fragment-wrapper .fragment.promo .promo-inner p {
-    padding-right: 46px;
-    padding-bottom: 12px;
-    margin: 0;
-  }
-
-  main .fragment-container .fragment-wrapper .fragment.promo .promo-inner p.button-container {
-    margin: 0 auto;
-    padding-right: 0;
-    width: 50%;
-  }
-
-  main .fragment-container.promo-container .fragment-wrapper {
-    box-sizing: border-box;
-    grid-column-start: 2;
-    grid-row: auto;
-    align-self: start;
-    justify-self: start;
   }
 }
