@@ -3,6 +3,7 @@
 ## Environments
 - Preview: https://main--the-cj-cup--hlxsites.hlx.page/
 - Live: https://main--the-cj-cup--hlxsites.hlx.live/
+- Prod: https://www.cjcupsouthcarolina.com/
 
 ## Installation
 
