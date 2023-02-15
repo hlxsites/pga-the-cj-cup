@@ -704,9 +704,13 @@ async function OptanonWrapper() {
     }
   }
 
-  loadScript(`https://assets.adobedtm.com/d17bac9530d5/90b3c70cfef1/launch-1ca88359b76c${isProd ? '.min' : ''}.js`, () => {
-    dispatchEvent(new Event('load'));
-  });
+  const params = new URLSearchParams(window.location.search);
+  const martech = params.get('martech');
+  if (!(martech && martech === 'disable-adobe-launch')) {
+    loadScript(`https://assets.adobedtm.com/d17bac9530d5/90b3c70cfef1/launch-1ca88359b76c${isProd ? '.min' : ''}.js`, () => {
+      dispatchEvent(new Event('load'));
+    });
+  }
 }
 
 const otId = placeholders.onetrustId;
